@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web01:
+    privileged: true
+    build: "./web01"
+    container_name: "web01"
+    ports:
+      - "8888:80"
+    environment:
+      TEST_ENV1: "XXXX"
+      TEST_ENV2: "YYYY"
+  
+#depends_on:
+# - xxxx
+# image: youhei/web01
